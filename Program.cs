@@ -13,6 +13,11 @@ namespace Estrutura_Base
             // Configure the FibonacciService as a scoped service to be injected by the dependency injection
             builder.Services.AddScoped<FibonacciService>();
 
+
+            //Adicionei aqui a injeção do ImpostoService
+            builder.Services.AddScoped<ImpostoService>();
+
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
